@@ -11,7 +11,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col justify-between p-24">
+    <main className="flex min-h-screen flex-col justify-between p-24 items-center">
       
       <div className="z-10 w-full items-center justify-between text-sm lg:flex">
         <h1 className="font-bold text-2xl">Однажды в сказке</h1>
@@ -31,7 +31,7 @@ export default function Home() {
         opts={{
           align: "start",
         }}
-        className="w-full max-w-sm"
+        className="w-fit items-center flex flex-1"
       >
         <CarouselContent>
           {Array.from({ length: 5 }).map((_, index) => (

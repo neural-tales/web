@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { cn } from '@/lib/utils';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
   description: "Веб-портал с сказками, написанными нейросетью, и иллюстрациями для детей любого возраста. Читай, учись, пиши!",
   generator: "Next.js",
   manifest: "/manifest.json",
-  keyboards: ["сказки", "истории", "tales", "однаждывсказке", "onceuponatale"],
+  keywords: ["сказки", "истории", "tales", "однаждывсказке", "onceuponatale"],
   viewport:
     "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover",
   icons: [
@@ -25,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body className={inter.className}>{children}</body>
+      <body className={cn(inter.className, "container")}>{children}</body>
     </html>
   )
 }
