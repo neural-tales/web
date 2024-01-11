@@ -11,7 +11,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col justify-between p-24 items-center">
+    <main className="flex min-h-screen flex-col justify-between p-16 lg:p-24 items-center">
       
       <div className="z-10 w-full items-center justify-between text-sm lg:flex">
         <h1 className="font-bold text-2xl">Однажды в сказке</h1>
