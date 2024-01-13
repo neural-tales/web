@@ -31,8 +31,7 @@ export default function Home() {
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
               <div className="p-1">
                 <Card className="">
-                  <CardHeader>
-                   </CardHeader>
+                  <CardHeader />
                   <CardContent>
                     <img
                       src="https://fastly.picsum.photos/id/11/2500/1667.jpg?hmac=xxjFJtAPgshYkysU_aqx2sZir-kIOjNR9vx0te7GycQ"
@@ -40,7 +39,7 @@ export default function Home() {
                       className="w-full"
                     />
                   </CardContent>
-                  <CardFooter className="flex justify-between">
+                  <CardFooter className="flex flex-col">
                     <CardTitle>Create project</CardTitle>
                     <CardDescription>Deploy your new project in one-click.</CardDescription>
                   </CardFooter>
